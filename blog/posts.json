@@ -3,8 +3,15 @@
   "siteName": "파페치 쿠폰 코드",
   "baseUrl": "https://fft.trip-offer.co.kr",
   "postUrlPattern": "/blog/{slug}/",
-  "updated": "2026-09-27",
+  "updated": "2026-09-29",
   "posts": [
+    {
+      "title": "파페치 쿠폰 코드 신규 회원 15% 받는 법",
+      "slug": "farfetch-new-member-15-percent-coupon",
+      "date": "2026-09-29",
+      "description": "파페치를 처음 이용하는 분들을 위해 신규 회원 15% 할인코드 사용법과 결제 전 확인할 점을 정리했습니다.",
+      "image": ""
+    },
     {
       "title": "파페치 생일 쿠폰 사용 전 꼭 설정해야할 것",
       "slug": "farfetch-birthday-coupon-account-settings",

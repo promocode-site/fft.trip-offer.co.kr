@@ -155,6 +155,14 @@
 .fx-colt{font-weight:900;color:#ffe94a;margin-bottom:10px;font-size:15px}
 .fx-base{margin-top:40px;padding-top:20px;border-top:2px solid #444;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:#bdbdb5}
 .fx-up{font-weight:800;text-decoration:none;border:2px solid #f3f3ef;padding:4px 12px}
+.fx-pages{max-width:1120px;margin:0 auto 30px}
+.fx-pages ul{display:flex;gap:10px;margin:0;padding:0 4px 4px 0;list-style:none;overflow-x:auto;scrollbar-width:none}
+.fx-pages ul::-webkit-scrollbar{display:none}
+.fx-pages a{display:block;white-space:nowrap;color:#111;background:#fff;text-decoration:none;font-weight:800;font-size:14.5px;padding:7px 14px;border:2px solid #111;box-shadow:3px 3px 0 #111}
+.fx-pages a:hover,.fx-pages a:focus-visible{background:#ffe94a}
+.fx-pages a[aria-current="page"]{background:#111;color:#ffe94a}
+.fx-links{margin-top:40px;padding-top:24px;border-top:2px solid #444}
+.fx-links ul{grid-template-columns:repeat(auto-fill,minmax(10em,1fr));gap:6px 20px}
 @media (max-width:900px){.fx-top .fx-in{grid-template-columns:1fr}.fx-cols{grid-template-columns:1fr 1fr}.fx-cols>div:first-child{grid-column:1/-1}}
 @media (max-width:640px){.fx-top{padding:32px 16px 40px}.fx-h1{box-shadow:5px 5px 0 #111;padding:10px 16px 14px;font-size:clamp(34px,10vw,44px)}.fx-figs{grid-template-columns:1fr 1fr}.fx-fig:nth-child(3){grid-column:1/-1}.fx-fig:nth-child(2){transform:none}.fx-nav .fx-in{padding:0 12px}.fx-foot{padding:44px 16px 32px}.fx-cols{grid-template-columns:1fr}.fx-tape{height:18px}}
 </style>
@@ -163,6 +171,13 @@
 </head>
 <body>
 <header class="fx-top" id="top">
+<nav class="fx-pages" aria-label="페이지 메뉴">
+<ul>
+<li><a href="./" aria-current="page">홈</a></li>
+<li><a href="card-discount/">파페치 할인 카드</a></li>
+<li><a href="sale-schedule/">파페치 할인 일정</a></li>
+</ul>
+</nav>
 <div class="fx-in">
 <div>
 <h1 class="fx-h1">파페치 쿠폰 코드</h1>
@@ -246,6 +261,7 @@
 .fc-foot{margin-top:44px;display:flex;flex-wrap:wrap;gap:20px 28px;align-items:center;justify-content:space-between;font-size:14.5px}
 .fc-foot p{max-width:44em}
 .fc-foot p a{font-weight:700}
+.fc-more{margin-top:40px}
 @media (max-width:1000px){.fc-list{grid-template-columns:repeat(2,minmax(0,1fr))}.fc-head{grid-template-columns:1fr;gap:28px}}
 @media (max-width:640px){
 .fc{padding:52px 16px 64px}
@@ -424,6 +440,7 @@
 <p>비자·마스터카드 결제를 조건으로 하는 할인코드는 결제수단에 따라 적용이 갈려서 <a href="#cards">파페치 카드 할인</a>에 모았습니다. 할인코드를 넣는 화면 위치는 <a href="#howto">파페치 할인코드 사용 방법과 오류 해결</a>에서 순서대로 짚습니다.</p>
 <a class="fc-btn" href="https://on.ltk.com/+3asSkCkorFPM7Br8Zt77UQ" target="_blank" rel="nofollow sponsored noopener">파페치 정가 상품 보러 가기</a>
 </div>
+<div class="fc-more"><a class="fc-btn" href="sale-schedule/">파페치 할인 일정 전체 보기</a></div>
 </div>
 </section>
 <div class="fx-tape" aria-hidden="true"></div>
@@ -483,6 +500,7 @@
 .fk-flip p:last-child{transform:rotate(.6deg);background:var(--fk-lemon)}
 .fk-flip b{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:900}
 .fk-flip a{font-weight:700}
+.fk-more{margin-top:44px}
 @media (max-width:1000px){.fk-head{grid-template-columns:1fr;gap:28px}.fk-visa{grid-template-columns:1fr}.fk-visa-l{border-right:0;border-bottom:3px solid var(--fk-ink)}}
 @media (max-width:640px){
 .fk{padding:52px 16px 64px}
@@ -585,6 +603,7 @@
 <p>파페치 생일 할인코드를 쓰는 주문이면 비자카드 10% 할인코드를 함께 넣을 수 없어 브랜드 수수료만 남습니다. 같은 1,260,000원 주문에서 225,000원을 뺀 1,035,000원을 마스터카드로 내면 <b>1,047,938원</b>, 비자카드로 내면 1,048,973원으로 마스터카드 쪽이 1,035원 낮습니다.</p>
 <p>첫 주문이면 비자카드 10% 할인코드 126,000원보다 <a href="#fc-nc15">파페치 신규 회원 15% 할인코드</a>의 189,000원이 63,000원 큽니다. 할인코드는 주문 하나에 하나만 들어가니 첫 주문은 신규 회원 할인코드를 넣고, 비자카드 10% 할인코드는 두 번째 주문부터 씁니다.</p>
 </div>
+<div class="fk-more"><a class="fk-btn" href="card-discount/">파페치 할인 카드 전체 보기</a></div>
 </div>
 </section>
 <div class="fx-tape" aria-hidden="true"></div>
@@ -975,7 +994,7 @@
 .upd-log-list li{display:flex;gap:14px;align-items:baseline;padding:11px 0;border-top:1px solid rgba(var(--upd-rgb),.14)}
 .upd-log-list li:first-child{border-top:0}
 .upd-log-list time{flex:0 0 auto;font:800 12.5px/1.6 ui-monospace,Menlo,Consolas,monospace;color:var(--upd-c)}
-.upd-log-list p{font-size:14px;line-height:1.6}
+.upd-log-list p{font-size:14px;line-height:1.6;overflow-wrap:anywhere}
 @media (max-width:640px){.upd-log-title{font-size:19px}.upd-log-list li{flex-direction:column;gap:2px}}
 </style>
 </main>
@@ -1011,6 +1030,26 @@
 </ul>
 </div>
 </div>
+<!--@FOOTER-LINKS-->
+<div class="fx-links">
+<p class="fx-colt">다른 할인코드</p>
+<ul>
+<li><a href="cos/">COS 프로모션코드</a></li>
+<li><a href="ssense/">ssense 할인코드</a></li>
+<li><a href="nike/">나이키 프로모션코드</a></li>
+<li><a href="netaporter/">네타포르테 할인코드</a></li>
+<li><a href="lululemon/">룰루레몬 프로모션코드</a></li>
+<li><a href="mytheresa/">마이테레사 할인코드</a></li>
+<li><a href="cet/">세타이어 할인코드</a></li>
+<li><a href="adidas/">아디다스 프로모션코드</a></li>
+<li><a href="arket/">아르켓 할인코드</a></li>
+<li><a href="alo/">알로 할인코드</a></li>
+<li><a href="andotherstories/">앤아더스토리즈 할인코드</a></li>
+<li><a href="yoox/">육스 할인코드</a></li>
+<li><a href="casetify/">케이스티파이 할인코드</a></li>
+</ul>
+</div>
+<!--@/FOOTER-LINKS-->
 <div class="fx-base">
 <p>&copy; 2026 파페치 쿠폰 코드</p>
 <a class="fx-up" href="#top">맨 위로</a>
